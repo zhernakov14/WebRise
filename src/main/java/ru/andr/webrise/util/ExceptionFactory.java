@@ -6,7 +6,7 @@ public class ExceptionFactory {
 
     private static final String USER_NOT_FOUND = "Пользователь с ID %d не найден";
     private static final String SUBSCRIPTION_NOT_FOUND = "Подписка с ID %d не найдена";
-    private static final String USER_IS_NOT_SUBSCRIBED = "Пользователь с ID %d не подписан на подписку с ID %d";
+    private static final String USER_IS_NOT_SUBSCRIBED = "Пользователь с ID %d не имеет подписки с ID %d";
 
     public static EntityNotFoundException createUserEntityNotFoundException(Long userId) {
         return new EntityNotFoundException(USER_NOT_FOUND.formatted(userId));
